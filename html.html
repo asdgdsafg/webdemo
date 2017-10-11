@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>menu</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/html.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header" class="row">
+			<div class="col-sm-6 text-center">
+				<span><img class="img1" src="images/2.png" alt=""></span>
+				<span><img class="img1" src="images/0.png" alt=""></span>
+				<span><img class="img1" src="images/1.png" alt=""></span>
+				<span><img class="img1" src="images/7.png" alt=""></span>
+				<span><img src="images/year.png" alt=""></span>
+				<span><img class="img1" src="images/0.png" alt=""></span>
+				<span><img class="img1" src="images/6.png" alt=""></span>
+				<span><img src="images/month.png" alt=""></span>
+				<span><img class="img1" src="images/2.png" alt=""></span>
+				<span><img class="img1" src="images/7.png" alt=""></span>
+				<span><img src="images/seven.png" alt=""></span>
+			</div>
+			<div class="col-sm-6 text-center">
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<img src="images/sign.png" alt="">
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<img src="images/sign.png" alt="">
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span style="margin-left: 10px;"><img src="images/week.png" alt=""></span>
+				<span><img src="images/two.png" alt=""></span>
+			</div>
+		</header>
+		<div id="navfirst">
+			<div class="panel panel-default">
+				<div id="html" class="list-group">
+					<div class="panel-heading list-group-item-info">
+						<h3 class="panel-title">HTML</h3>
+					</div>
+					<a href="html.html" class="list-group-item active">部分标签</a>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div id="css" class="list-group">
+					<div class="panel-heading list-group-item-info">
+						<h3 class="panel-title">CSS</h3>
+					</div>
+					<a href="bgimg.html" class="list-group-item">背景与背景图片</a>
+					<a href="float.html" class="list-group-item">float、position</a>
+					<a href="z-index.html" class="list-group-item">z-index、! important</a>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div id="js" class="list-group">
+					<div class="panel-heading list-group-item-info">
+						<h3 class="panel-title">JS</h3>
+					</div>
+					<a href="time.html" class="list-group-item">时间</a>
+				</div>
+			</div>
+			<div class="list-group">
+				<a href="RegExp.html" class="list-group-item list-group-item-success">RegExp</a>
+			</div>
+			<div class="list-group">
+				<a href="http://www.w3school.com.cn/index.html" class="list-group-item list-group-item-success" target="_blank">W3C</a>
+			</div>
+		</div>
+		<div id="main">
+			<h3 style="margin-top: 0;">HTML标签</h3>
+			<h4>1.无属性标签</h4>
+			<div class="panel panel-default">
+				<table class="table">
+					<tr><th>address</th><td>定义文档或文章的作者/拥有者的联系信息</td></tr>
+					<tr><th>article</th><td>标签的内容独立于文档的其余部分</td></tr>
+					<tr><th>aside</th><td>内容可用作文章的侧栏</td></tr>
+					<tr><th>b</th><td title="在没有其他合适标签更合适时，才应该把 &lt;b&gt; 标签作为最后的选项">加粗,在没有其他合适标签更合适时，才应该把b标签作为最后的选项</td></tr>
+					<tr><th></th><td></td></tr>
+					<!-- <tr><th></th><td></td></tr> -->
+					<tr><th>div</th><td>块级元素；可定义文档中的分区或节。</td></tr>
+					<tr><th>p</th><td>块级元素；段落。</td></tr>
+					<tr><th>span</th><td>行内元素；语句</td></tr>
+				</table>
+			</div>
+			<h4>2. 有属性标签</h4>
+			<div class="panel panel-default">
+				<table class="table">
+					<tr><th>a</th><td>超链接</td><td><button type="button" class="btn btn-xs a-attr">属性</button></td></tr>
+					<tr class="a-hid"><td>必选属性</td><td>href</td><td>指定超链接目标的 <button type="button" class="btn btn-xs btn-url">URL</button></td></tr>
+					<tr class="a-url-hid a-son-hid"><td title="href=&quot;http://www.example.com/index.htm&quot;">绝对URL - 指向另一个站点</td><td title="href=&quot;index.htm&quot;">相对URL - 指向站点内的某个文件</td><td title="href=&quot;#top&quot;">锚点指向页面中的锚</td></tr>
+					<tr class="a-hid"><td>可选属性</td><td>target</td><td>规定在何处打开链接文档 <button type="button" class="btn btn-xs btn-val">值</button></td></tr>
+					<tr class="tar-hid a-son-hid"><td>_blank</td><td>在新窗口打开</td><td></td></tr>
+					<tr class="tar-hid a-son-hid"><td>_parent</td><td>在父框架集中打开</td><td></td></tr>
+					<tr class="tar-hid a-son-hid"><td>_self</td><td>默认</td><td></td></tr>
+					<tr class="tar-hid a-son-hid"><td>_top</td><td>在整个窗口中打开</td><td></td></tr>
+					<tr class="tar-hid a-son-hid"><td>framename</td><td>在指定的框架中打开</td><td title="target=&quot;top&quot; 对应 name=&quot;top&quot;">&lt;frame&gt;的name属性对应</td></tr>
+					<tr class="a-hid"><td></td><td>download</td><td>下载的超链接 href=&quot;<b title="文件地址">fileURL</b>&quot; download=&quot;<b title="文件名，会自动加后缀">filename</b>&quot;</td></tr>
+					<tr class="a-hid"><td></td><td>id(name)</td><td>锚点定位 href=&quot;<b title="#+锚点的id(name)">#id</b>&quot; id=&quot;<b title="id可以用在任意标签，name只可以用在a标签">id</b>&quot;</td></tr>
+					<tr class="a-hid"><td></td><td>rel</td><td><button type="button" class="btn btn-xs a-rel">W3C详细解释</button></td></tr>
+					<tr><th>abbr</th><td>单词或短语的缩写形式</td><td><button type="button" class="btn btn-xs abbr-attr">属性</button></td></tr>
+					<tr class="abbr-hid"><td>必选属性</td><td>title</td><td>有关元素的额外信息</td></tr>
+					<tr><th>audio</th><td>音频</td><td><button type="button" class="btn btn-xs audio-attr">属性</button></td></tr>
+					<tr class="audio-hid"><td>必选属性</td><td>src</td><td>URL</td></tr>
+					<tr class="audio-hid"><td>可选属性</td><td>autoplay</td><td>音频在就绪后马上播放</td></tr>
+					<tr class="audio-hid"><td></td><td>controls</td><td>向用户显示控件，比如播放按钮</td></tr>
+					<tr class="audio-hid"><td></td><td>loop</td><td>每当音频结束时重新开始播放</td></tr>
+					<tr class="audio-hid"><td></td><td>muted</td><td>视频输出应该被静音</td></tr>
+					<tr class="audio-hid"><td></td><td>preload</td><td title="如果使用 &quot;autoplay&quot;，则忽略该属性">音频在页面加载时进行加载，并预备播放</td></tr>
+					<tr><th>img</th><td>图片</td><td><button type="button" class="btn btn-xs img-attr">属性</button></td></tr>
+					<tr class="img-hid"><td>必选属性</td><td>alt</td><td>图片信息</td></tr>
+					<tr class="img-hid"><td></td><td>src</td><td>图片URL</td></tr>
+					<tr class="img-hid"><td>可选属性</td><td>height</td><td>高度</td></tr>
+					<tr class="img-hid"><td></td><td>width</td><td>宽度</td></tr>
+					<tr class="img-hid"><td></td><td>ismap</td><td>将图像定义为服务器端图像映射</td></tr>
+					<tr class="img-hid"><td></td><td>longdesc</td><td>指向包含长的图像描述文档的 URL</td></tr>
+					<tr class="img-hid"><td></td><td>usemap</td><td>将图像定义为客户器端图像映射</td></tr>
+				</table>
+			</div>
+			<h4>3.版本声明</h4>
+			<div class="panel panel-default">
+				<table class="table">
+					<tr><th>div</th><td>块级元素；可定义文档中的分区或节。</td></tr>
+					<tr><th>p</th><td>块级元素；段落。</td></tr>
+					<tr><th>span</th><td>行内元素；语句</td></tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" class="center-block text-center">以上内容来自自己的总结与网络搜索</footer>
+</body>
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/html.js"></script>
+</html>

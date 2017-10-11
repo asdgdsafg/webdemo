@@ -1,0 +1,6 @@
+#main .table th:first-child {
+	width: 20%;
+}
+#main .table td:first-child {
+	width: 25%;
+}

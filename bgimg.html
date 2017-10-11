@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>背景与背景图片</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/bgimg.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header" class="row">
+			<div class="col-sm-6 text-center">
+				<span><img class="img1" src="images/2.png" alt=""></span>
+				<span><img class="img1" src="images/0.png" alt=""></span>
+				<span><img class="img1" src="images/1.png" alt=""></span>
+				<span><img class="img1" src="images/7.png" alt=""></span>
+				<span><img src="images/year.png" alt=""></span>
+				<span><img class="img1" src="images/0.png" alt=""></span>
+				<span><img class="img1" src="images/6.png" alt=""></span>
+				<span><img src="images/month.png" alt=""></span>
+				<span><img class="img1" src="images/2.png" alt=""></span>
+				<span><img class="img1" src="images/7.png" alt=""></span>
+				<span><img src="images/seven.png" alt=""></span>
+			</div>
+			<div class="col-sm-6 text-center">
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<img src="images/sign.png" alt="">
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<img src="images/sign.png" alt="">
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span style="margin-left: 10px;"><img src="images/week.png" alt=""></span>
+				<span><img src="images/two.png" alt=""></span>
+			</div>
+		</header>
+		<div id="navfirst">
+			<div class="panel panel-default">
+				<div id="html" class="list-group">
+					<div class="panel-heading list-group-item-info">
+						<h3 class="panel-title">HTML</h3>
+					</div>
+					<a href="html.html" class="list-group-item">部分标签</a>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div id="css" class="list-group">
+					<div class="panel-heading list-group-item-info">
+						<h3 class="panel-title">CSS</h3>
+					</div>
+					<a href="bgimg.html" class="list-group-item active">背景与背景图片</a>
+					<a href="float.html" class="list-group-item">float、position</a>
+					<a href="z-index.html" class="list-group-item">z-index、! important</a>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div id="js" class="list-group">
+					<div class="panel-heading list-group-item-info">
+						<h3 class="panel-title">JS</h3>
+					</div>
+					<a href="time.html" class="list-group-item">时间</a>
+					<a href="roll.html" class="list-group-item">轮播图</a>
+				</div>
+			</div>
+			<div class="list-group">
+				<a href="RegExp.html" class="list-group-item list-group-item-success">RegExp</a>
+			</div>
+			<div class="list-group">
+				<a href="http://www.w3school.com.cn/index.html" class="list-group-item list-group-item-success" target="_blank">W3C</a>
+			</div>
+		</div>
+		<div id="main">
+			<div class="right">
+				<div class="topimg">文字文字文字文字文字</div>
+				<div class="div1">
+					<h3>背景图片的移动</h3>
+					<p>图片的移动可以只移动单轴，X轴或Y轴；单位为PX、%、em或rem。</p>
+					<pre>background-position: 20px 20%;<br>background-position-x: 20px;<br>background-position-y; 20%;<br>background-position-y; initial;</pre>
+					<div class="row">
+						<div class="col-md-4">
+							<input type="text" class="form-control" id="input1" placeholder="输入X轴移动距离，空为0">
+						</div>
+						<div class="col-md-4">
+							<input type="text" class="form-control" id="input2" placeholder="输入Y轴移动距离，空为0">
+						</div>
+						<span class="btn-group col-md-4" role="group">
+							<button class="btn btn-default">提交</button>
+							<button class="btn btn-info">向右</button>
+							<button class="btn btn-info">向下</button>
+							<button class="btn btn-info">还原</button>
+						</span>
+					</div>
+				</div>
+				<div class="div2">
+					<h3>背景图片的大小</h3>
+					<p>图片的大小可以使用一个值或两个值，当只有一个值并且单位为PX时，宽高同时使用这个值；当只有一个值并且单位为%时；宽度为使用背景图元素的百分比大小，同时高度按同比例变化；单位为PX、%、em或rem。</p>
+					<pre>background-size: 100px 100%;<br>background-size: 200px;<br>background-size: 100%;<br><span title="使用背景图元素的宽度不等于高度时">background-size: 50%; ≠ background-size: 50% 50%;</span></pre>
+					<div class="row">
+						<div class="col-md-4">
+							<input type="text" class="form-control" id="input3" placeholder="输入宽度，空为初始值">
+						</div>
+						<div class="col-md-4">
+							<input type="text" class="form-control" id="input4" placeholder="输入高度，空为初始值">
+						</div>
+						<span class="btn-group col-md-4" role="group">
+							<button class="btn btn-default">提交</button>
+							<button class="btn btn-info">变宽</button>
+							<button class="btn btn-info">变高</button>
+							<button class="btn btn-info">还原</button>
+						</span>
+					</div>
+				</div>
+				<div class="div3">
+					<h3>背景图片的是否平铺</h3>
+					<p>图片的平铺有4种。1、不使用平铺；2、X轴平铺；3、Y轴平铺；4、X&amp;Y轴平铺</p>
+					<pre>background-repeat: no-repeat;<br>background-repeat: repeat-x;<br>background-repeat: repeat-y;<br>background-repeat: repeat;</pre>
+					<span class="btn-group" role="group">
+						<button class="btn btn-default" title="不使用平铺">no-repeat</button>
+						<button class="btn btn-info" title="X轴平铺">repeat-x</button>
+						<button class="btn btn-info" title="Y轴平铺">repeat-y</button>
+						<button class="btn btn-info" title="X&amp;Y轴平铺">repeat</button>
+					</span>
+				</div>
+				<div class="div4">
+					<h3>背景颜色的绘制区域</h3>
+					<p>图片的绘制区域有3种。1、背景被裁剪到边框盒；2、背景被裁剪到内边距框；3、背景被裁剪到内容框</p>
+					<pre>background-clip: border-box;<br>background-clip: padding-box;<br>background-clip: content-box;</pre>
+					<span class="btn-group" role="group">
+						<button class="btn btn-default" title="默认样式，背景被裁剪到边框盒">border-box</button>
+						<button class="btn btn-info" title="背景被裁剪到内边距框">padding-box</button>
+						<button class="btn btn-info" title="背景被裁剪到内容框">content-box</button>
+					</span>
+				</div>
+				<div class="div5">
+					<h3>背景图片的定位区域</h3>
+					<p>图片的定位区域有3种。1、背景图像相对于内边距框来定位；2、背景图像相对于边框盒来定位；3、背景图像相对于内容框来定位</p>
+					<pre>background-origin: border-box;<br>background-origin: padding-box;<br>background-origin: content-box;</pre>
+					<span class="btn-group" role="group">
+						<button class="btn btn-info" title="背景图像相对于边框盒来定位">border-box</button>
+						<button class="btn btn-default" title="默认样式，背景图像相对于内边距框来定位">padding-box</button>
+						<button class="btn btn-info" title="背景图像相对于内容框来定位">content-box</button>
+					</span>
+				</div>
+				<div class="div6">
+					<h3>背景图片的使用</h3>
+					<p>图片的来源是使用URl，URl可以使用相对链接和绝对链接</p>
+					<pre><span title="相对链接">background-image: url(img.png);</span><br><span title="绝对链接">background-image: url(https://www.&nbsp;.com/images/img.png);</span></pre>
+				</div>
+				<div class="div7">
+					<h3>背景的颜色</h3>
+					<p>颜色有4种方式。1、使用某种颜色的英文；2、十六进制；3、RGB；4、透明</p>
+					<pre><span title="英文单词">background-color: red;</span><br><span title="十六进制">background-color: #ffffff;</span><br><span title="RGB">background-color: rgb(255,0,0);</span><br><span title="透明">background-color: transparent;</span></pre>
+				</div>
+				<div class="div8">
+					<h3>背景图片的固定方式</h3>
+					<p>图片的固定方式有2种。1、页面滚动时，图像不会移动；2、默认；因为已经使用了定位<code>(background-position)</code>，位置已经固定</p>
+					<pre><span title="页面滚动时，图像不会移动">background-attachment: fixed;</span><br><span title="默认">background-attachment: scroll;</span></pre>
+				</div>
+				<div class="div9">
+					<h3>背景图片的代码简写</h3>
+					<p>代码简写：多种样式合为一行代码</p>
+					<pre><span>background: <span title="背景颜色" style="color: red">#ddd</span> <span title="背景图片url" style="color: #c7254e">url(img.png)</span> <span title="平铺方式" style="color: blue">no-repeat</span> <span title="位置position/fixed" style="color: orange">0 0</span> / <span title="图片大小" style="color: green">200px 200px</span>;</span></pre>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" class="center-block text-center">以上内容来自自己的总结与网络搜索</footer>
+</body>
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/bgimg.js"></script>
+</html>

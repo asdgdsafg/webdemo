@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>float</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/float.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header" class="row">
+			<div class="col-sm-6 text-center">
+				<span><img class="img1" src="images/2.png" alt=""></span>
+				<span><img class="img1" src="images/0.png" alt=""></span>
+				<span><img class="img1" src="images/1.png" alt=""></span>
+				<span><img class="img1" src="images/7.png" alt=""></span>
+				<span><img src="images/year.png" alt=""></span>
+				<span><img class="img1" src="images/0.png" alt=""></span>
+				<span><img class="img1" src="images/6.png" alt=""></span>
+				<span><img src="images/month.png" alt=""></span>
+				<span><img class="img1" src="images/2.png" alt=""></span>
+				<span><img class="img1" src="images/7.png" alt=""></span>
+				<span><img src="images/seven.png" alt=""></span>
+			</div>
+			<div class="col-sm-6 text-center">
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<img src="images/sign.png" alt="">
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<img src="images/sign.png" alt="">
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span style="margin-left: 10px;"><img src="images/week.png" alt=""></span>
+				<span><img src="images/two.png" alt=""></span>
+			</div>
+		</header>
+		<div id="navfirst">
+			<div class="panel panel-default">
+				<div id="html" class="list-group">
+					<div class="panel-heading list-group-item-info">
+						<h3 class="panel-title">HTML</h3>
+					</div>
+					<a href="html.html" class="list-group-item">部分标签</a>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div id="css" class="list-group">
+					<div class="panel-heading list-group-item-info">
+						<h3 class="panel-title">CSS</h3>
+					</div>
+					<a href="bgimg.html" class="list-group-item">背景与背景图片</a>
+					<a href="float.html" class="list-group-item active">float、position</a>
+					<a href="z-index.html" class="list-group-item">z-index、! important</a>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div id="js" class="list-group">
+					<div class="panel-heading list-group-item-info">
+						<h3 class="panel-title">JS</h3>
+					</div>
+					<a href="time.html" class="list-group-item">时间</a>
+					<a href="roll.html" class="list-group-item">轮播图</a>
+				</div>
+			</div>
+			<div class="list-group">
+				<a href="RegExp.html" class="list-group-item list-group-item-success">RegExp</a>
+			</div>
+			<div class="list-group">
+				<a href="http://www.w3school.com.cn/index.html" class="list-group-item list-group-item-success" target="_blank">W3C</a>
+			</div>
+		</div>
+		<div id="main">
+			<div class="row">
+				<div class=" col-sm-6">
+					<div class="overflow lt text-center">
+						无overflow或clear，父元素无法撑开
+						<div class="left">左浮动</div>
+						<div class="right">右浮动</div>
+					</div>
+				</div>
+				<div class=" col-sm-6">
+					<div class="overflow rt text-center">
+						<div class="left">左浮动</div>
+						<div class="right">右浮动</div>
+					</div>
+				</div>
+			</div>
+			<div class="div1">
+				<h3>子元素浮动，父元素无法撑开</h3>
+				<h4>1. overflow: hidden;</h4>
+				<p>对父元素加 css { overflow: hidden; } 。</p>
+				<pre>&lt;div style="overflow: hidden;"&gt;<br>&#8195;&lt;div style="float: left;"&gt;左浮动&lt;/div&gt;<br>&#8195;&lt;div style="float: right;"&gt;右浮动&lt;/div&gt;<br>&lt;/div&gt;</pre>
+				<h4>2. clear: both;</h4>
+				<p>最后一个浮动的子元素的<span style="color: red;">同级</span>下面加个div css { clear: both; } 。</p>
+				<pre>&lt;div&gt;<br>&#8195;&lt;div style="float: left;"&gt;左浮动&lt;/div&gt;<br>&#8195;&lt;div style="float: right;"&gt;右浮动&lt;/div&gt;<br>&#8195;&lt;div style="clear: both;"&gt;&lt;div&gt;<br>&lt;div&gt;</pre>
+			</div>
+			<div class="relative1">
+				<div class="relative2 text-center">
+					灰色区域为：width: 80%; height: 80%; position: relative; top: 10%; left: 10%;
+					<div class="absolute toplt">top: 0;<br>left: 0;<br>红框a</div>
+					<div class="absolute toprt">top: 0;<br>right: 0;<br>红框b</div>
+					<div class="absolute btrt">bottom: 0;<br>right: 0;<br>红框c</div>
+					<div class="absolute btlt">bottom: 0;<br>left: 0;<br>红框d</div>
+				</div>
+			</div>
+			<div class="div2">
+				<h3>position 相对定位、绝对定位、固定定位</h3>
+				<p>position 有4个属性：top、right、bottom、left；<span style="color: red;">最多只能使用2个属性，top和bottom只能一个，right和left只能一个；值可以是负数。</span><br>灰色区域为相对定位；红框a、b、c、d为绝对定位。</p>
+				<h4>1. position: relative;</h4>
+				<p>相对定位，通过当前位置进行移动。</p>
+				<pre>position: relative;<br><span>top: 20px;</span>向下20px<br><span>right: 20px;</span>向右20px<br><span><del>bottom: 20px;</del></span>向下20px<br><span><del>left: 20px;</del></span>向左20px</pre>
+				<h4>2. position: absolute;</h4>
+				<p>绝对定位，受父元素的内边距影响；当父元素无 position: relative 时以 body 为定位。</p>
+				<pre>position: absolute;<br><span>top: 0;</span>贴在父元素的上边<br><span>right: 0;</span>贴在父元素的右边<br><span><del>bottom: 0;</del></span>贴在父元素的下边<br><span><del>left: 0;</del></span>贴在父元素的左边</pre>
+				<h4>3. position: fixed;</h4>
+				<p>固定定位，以浏览器视口进行定位</p>
+				<pre>position: absolute;<br><span>top: 0;</span>贴在浏览器的上边<br><span>right: 0;</span>贴在浏览器的右边<br><span><del>bottom: 0;</del></span>贴在浏览器的下边<br><span><del>left: 0;</del></span>贴在浏览器的左边</pre>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" class="center-block text-center">以上内容来自自己的总结与网络搜索</footer>
+</body>
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+</html>

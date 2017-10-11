@@ -1,0 +1,71 @@
+#main .overflow.lt {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+#main .overflow.rt {
+	overflow: hidden;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+#main .overflow .left {
+	float: left;
+	border: 2px solid red;
+	color: blue;
+}
+#main .overflow .right {
+	float: right;
+	border: 2px solid blue;
+	color: red;
+}
+#main .overflow .left,
+#main .overflow .right {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+}
+#main .div2 pre span {
+	display: inline-block;
+	width: 200px;
+}
+#main .relative1 {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+#main .relative1 .relative2 {
+	position: relative;
+	width: 80%;
+	height: 80%;
+	line-height: 160px;
+	background: #ccc;
+	top: 10%;
+	left: 10%;
+}
+#main .relative1 .absolute {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	border: 2px solid red;
+	line-height: initial;
+}
+#main .relative1 .absolute.toplt {
+	top: 0;
+	left: 0;
+}
+#main .relative1 .absolute.toprt {
+	top: 0;
+	right: 0;
+}
+#main .relative1 .absolute.btrt {
+	bottom: 0;
+	right: 0;
+}
+#main .relative1 .absolute.btlt {
+	bottom: 0;
+	left: 0;
+}

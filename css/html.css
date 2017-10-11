@@ -1,0 +1,29 @@
+#main .table th:first-child {
+	width: 22%;
+}
+#main .table td:first-child {
+	width: 22%;
+}
+#main .panel:nth-of-type(2) table td:nth-child(2),
+#main .panel:nth-of-type(2) table td:nth-child(3) {
+	width: 39%;
+}
+#main .panel .a-hid,
+#main .panel .a-url-hid {
+	display: none;
+	color: #3c763d;
+}
+#main .panel table .a-son-hid {
+	display: none;
+	color: blue;
+}
+#main .panel table button {
+	color: #333;
+}
+#main .panel .abbr-hid,
+#main .panel .audio-hid,
+#main .panel .img-hid,
+#main .panel .img-url-hid {
+	display: none;
+	color: #3c763d;
+}

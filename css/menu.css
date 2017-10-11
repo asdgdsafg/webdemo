@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #fdfcf8;
+}
+li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+#wrapper {
+	max-width: 1360px;
+	min-width: 1200px;
+	margin: 0 auto;
+	overflow:hidden;
+}
+#header {
+	width: 100%;
+	margin: 20px 0;
+	padding: 10px 0;
+	background: url(../images/bg.png);
+	border-radius: 5px;
+}
+#navfirst {
+	width: 200px;
+	box-sizing: border-box;
+	float: left;
+}
+/* 原本的active颜色和标题（list-group-item-info）样式对调 */
+#navfirst .list-group-item-info{
+	background: #337ab7;
+	color: white;
+	border-color: #337ab7;
+}
+#navfirst .active {
+	background: #d9edf7;
+	color: #31708f;
+	border-color: #d9edf7;
+}
+#main {
+	width: calc(100% - 220px);
+	float: right;
+	box-sizing: border-box;
+	height: 100%;
+}
+#footer {
+	padding: 20px 0;
+}

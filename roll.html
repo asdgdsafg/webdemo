@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/roll.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header" class="row">
+			<div class="col-sm-6 text-center">
+				<span><img class="img1" src="images/2.png" alt=""></span>
+				<span><img class="img1" src="images/0.png" alt=""></span>
+				<span><img class="img1" src="images/1.png" alt=""></span>
+				<span><img class="img1" src="images/7.png" alt=""></span>
+				<span><img src="images/year.png" alt=""></span>
+				<span><img class="img1" src="images/0.png" alt=""></span>
+				<span><img class="img1" src="images/6.png" alt=""></span>
+				<span><img src="images/month.png" alt=""></span>
+				<span><img class="img1" src="images/2.png" alt=""></span>
+				<span><img class="img1" src="images/7.png" alt=""></span>
+				<span><img src="images/seven.png" alt=""></span>
+			</div>
+			<div class="col-sm-6 text-center">
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<img src="images/sign.png" alt="">
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<img src="images/sign.png" alt="">
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span style="margin-left: 10px;"><img src="images/week.png" alt=""></span>
+				<span><img src="images/two.png" alt=""></span>
+			</div>
+		</header>
+		<div id="navfirst">
+			<div class="panel panel-default">
+				<div id="html" class="list-group">
+					<div class="panel-heading list-group-item-info">
+						<h3 class="panel-title">HTML</h3>
+					</div>
+					<a href="html.html" class="list-group-item">部分标签</a>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div id="css" class="list-group">
+					<div class="panel-heading list-group-item-info">
+						<h3 class="panel-title">CSS</h3>
+					</div>
+					<a href="bgimg.html" class="list-group-item">背景与背景图片</a>
+					<a href="float.html" class="list-group-item">float、position</a>
+					<a href="z-index.html" class="list-group-item">z-index、! important</a>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div id="js" class="list-group">
+					<div class="panel-heading list-group-item-info">
+						<h3 class="panel-title">JS</h3>
+					</div>
+					<a href="time.html" class="list-group-item">时间</a>
+					<a href="roll.html" class="list-group-item active">轮播图</a>
+				</div>
+			</div>
+			<div class="list-group">
+				<a href="RegExp.html" class="list-group-item list-group-item-success">RegExp</a>
+			</div>
+			<div class="list-group">
+				<a href="http://www.w3school.com.cn/index.html" class="list-group-item list-group-item-success" target="_blank">W3C</a>
+			</div>
+		</div>
+		<div id="main">
+			<h3 style="margin-top: 0;">下拉轮播图</h3>
+			<div class="one-roll roll">
+				<ul class="banner1">
+					<li style="z-index: 1;"><img src="images/banner1.jpg" alt="" width="1920" height="600"></li>
+					<li><img src="images/banner2.jpg" alt="" width="1920" height="600"></li>
+					<li><img src="images/banner3.jpg" alt="" width="1920" height="600"></li>
+				</ul>
+				<div class="img"><img src="images/banner1.jpg" alt="" width="1920" height="600"></div>
+				<div class="btn-left"></div>
+				<ul class="one-in">
+					<li class="one-active"></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<div class="btn-right"></div>
+			</div>
+			<h4>注意点</h4>
+			<div class="panel panel-default">
+				<table class="table">
+					<tr><td>1. 下拉式轮播图通过更改<code>z-index</code>来覆盖之前的图片</td></tr>
+					<tr><td>2. 需要轮播的图片使用绝对定位，固定在同个位置；然后使用相同尺寸的图放在轮播图下，用来撑开，并且不会因为更改网页大小而无法自适应，当前使用4张图</td></tr>
+					<tr><td>3. 把左右两个按钮和下面三个按钮的<code>z-index</code>调高，然后添加事件，并且当动画未执行完毕时无法执行下个动画</td></tr>
+					<tr><td>4. 添加定时器，自动执行右按钮的效果；当鼠标移到图片上时停止定时器，移开时开启，当鼠标切换其他页面或其他软件是停止定时器，回到原来页面时开启</tr>
+				</table>
+			</div>
+			<h3>无缝轮播图</h3>
+			<div class="two-roll roll">
+				<ul class="banner2">
+					<li><img src="images/banner3.jpg" alt="" width="1920" height="600"></li>
+					<li><img src="images/banner1.jpg" alt="" width="1920" height="600"></li>
+					<li><img src="images/banner2.jpg" alt="" width="1920" height="600"></li>
+					<li><img src="images/banner3.jpg" alt="" width="1920" height="600"></li>
+					<li><img src="images/banner1.jpg" alt="" width="1920" height="600"></li>
+				</ul>
+				<div class="btn-left"></div>
+				<ul class="two-in">
+					<li class="two-active"></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<div class="btn-right"></div>
+			</div>
+			<h4>注意点</h4>
+			<div class="panel panel-default">
+				<table class="table">
+					<tr><td>1. 无缝式轮播图通过更改父元素的<code>margin-left</code>来从右向左移动图片</td></tr>
+					<tr><td>2. 需要把轮播的图片使用浮动排成一排，再重新拿最后一张放到第一张前面，重新拿第一张放到最后一张后面，当前使用5张图，排列方式31231</td></tr>
+					<tr><td>3. 移动到第三张（312<span style="color: red;">3</span>1），要跳转到第一张（3<span style="color: red;">1</span>231）时，提前跳转到<span style="color: red;">3</span>1231，然后移动到第一张（3<span style="color: red;">1</span>231），就不会变成从左向右移动而且一次移动多张图片</td></tr>
+					<tr><td>4. 自适应需要多加一张图，5个按钮除了没有使用<code>z-index</code>，其他一样；定时器同上</tr>
+				</table>
+			</div>
+			<a class="btn bg-success" href="roll2.html" target="_blank">自适应轮播图</a>
+		</div>
+	</div>
+	<footer id="footer" class="center-block text-center">以上内容来自自己的总结与网络搜索</footer>
+</body>
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/roll.js"></script>
+</html>
