@@ -32,5 +32,6 @@ $(function() {
 			return '0' + n;
 		}
 	}
-	$('#navfirst').find('#css').find('a').eq(2).addClass('hidden')
+	$('#navfirst').find('#css').find('a').eq(2).addClass('hidden');
+	$('#footer').addClass('hidden');
 })
