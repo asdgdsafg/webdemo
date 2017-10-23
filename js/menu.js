@@ -34,4 +34,10 @@ $(function() {
 	}
 	$('#navfirst').find('#css').find('a').eq(2).addClass('hidden');
 	$('#footer').addClass('hidden');
+	$('#html').append('<a href="canvas.html" class="list-group-item">canvas</a>');
+	if ($('title').html() == 'canvas') {
+		$('#html').children('a').eq(1).addClass('active');
+	}
+	$('#wrapper').css('min-height', '1050px');
+	$('#main').css('margin-bottom', '20px');
 })

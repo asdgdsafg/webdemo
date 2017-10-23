@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<style>
+		table tr th {
+			width: 30%;
+		}
+		table tr td {
+			width: 70%;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header" class="row">
+			<div class="col-sm-6 text-center">
+				<span><img class="img1" src="images/2.png" alt=""></span>
+				<span><img class="img1" src="images/0.png" alt=""></span>
+				<span><img class="img1" src="images/1.png" alt=""></span>
+				<span><img class="img1" src="images/7.png" alt=""></span>
+				<span><img src="images/year.png" alt=""></span>
+				<span><img class="img1" src="images/0.png" alt=""></span>
+				<span><img class="img1" src="images/6.png" alt=""></span>
+				<span><img src="images/month.png" alt=""></span>
+				<span><img class="img1" src="images/2.png" alt=""></span>
+				<span><img class="img1" src="images/7.png" alt=""></span>
+				<span><img src="images/seven.png" alt=""></span>
+			</div>
+			<div class="col-sm-6 text-center">
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<img src="images/sign.png" alt="">
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<img src="images/sign.png" alt="">
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span><img class="img2" src="images/0.png" alt=""></span>
+				<span style="margin-left: 10px;"><img src="images/week.png" alt=""></span>
+				<span><img src="images/two.png" alt=""></span>
+			</div>
+		</header>
+		<div id="navfirst">
+			<div class="panel panel-default">
+				<div id="html" class="list-group">
+					<div class="panel-heading list-group-item-info">
+						<h3 class="panel-title">HTML</h3>
+					</div>
+					<a href="html.html" class="list-group-item">部分标签</a>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div id="css" class="list-group">
+					<div class="panel-heading list-group-item-info">
+						<h3 class="panel-title">CSS</h3>
+					</div>
+					<a href="bgimg.html" class="list-group-item">背景与背景图片</a>
+					<a href="float.html" class="list-group-item">float、position</a>
+					<a href="z-index.html" class="list-group-item">z-index、! important</a>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div id="js" class="list-group">
+					<div class="panel-heading list-group-item-info">
+						<h3 class="panel-title">JS</h3>
+					</div>
+					<a href="time.html" class="list-group-item">时间</a>
+					<a href="roll.html" class="list-group-item">轮播图</a>
+				</div>
+			</div>
+			<div class="list-group">
+				<a href="RegExp.html" class="list-group-item list-group-item-success">RegExp</a>
+			</div>
+			<div class="list-group">
+				<a href="http://www.w3school.com.cn/index.html" class="list-group-item list-group-item-success" target="_blank">W3C</a>
+			</div>
+		</div>
+		<div id="main">
+			<h3 style="margin-top: 0;">canvas</h3>
+			<h4>1.canvas时钟</h4>
+			<div style="width: 100%; margin: 0 auto; overflow: hidden;">
+				<div style="float: left; width: calc(100% - 320px);">
+					<p>1.canvas时钟因为要使用定时器，所以每次执行都要清除画布上的内容<code>clearRect()</code></p>
+					<p>2.每次画圆/圈后，在下次画圆前加上<code>beginPath()</code>，尤其是循环创建多个圆时</p>
+					<p>3.开始画时，可以使用平移<code>translate()</code>，移到中心点</p>
+					<p>4.三个时针根据<code>rotate()</code>旋转来移动</p>
+					<p>小时<code>num = new Date().getHours() * 30 + new Date().getMinutes() / 2</code>每格的度数为30度，其中还分为五小格并且要根据分针进行移动</p>
+					<p>分钟<code>num = new Date().getMinutes() * 6 + new Date().getSeconds() / 10</code>每格的度数为6度，其中每格还要根据秒针进行移动</p>
+					<p>秒钟<code>num = new Date().getSeconds() * 6</code>当前秒钟 * 6度，每格的度数为6，例36s的度数为36 * 6</p>
+					<p><code>(num - 90) * Math.PI / 180</code>默认是在3点钟方向，需要-90度</p>
+				</div>
+				<canvas id="myCanvas" width="310" height="310" style="border: 1px solid #ccc; float: right;">您的浏览器不支持 HTML5 canvas 标签</canvas>
+			</div>
+			<h4>2. ...</h4>
+			<div class="panel panel-default">
+				<table class="table">
+					<tr><th>...</th><td>...</td></tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" class="center-block text-center">以上内容来自自己的总结与网络搜索</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/canvas.js"></script>
+</html>
