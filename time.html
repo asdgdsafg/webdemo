@@ -9,164 +9,163 @@
 	<link rel="stylesheet" type="text/css" href="css/time.css">
 </head>
 <body>
-	<div id="wrapper">
-		<header id="header" class="row">
-			<div class="col-sm-6 text-center">
-				<span><img class="img1" src="images/2.png" alt=""></span>
-				<span><img class="img1" src="images/0.png" alt=""></span>
-				<span><img class="img1" src="images/1.png" alt=""></span>
-				<span><img class="img1" src="images/7.png" alt=""></span>
-				<span><img src="images/year.png" alt=""></span>
-				<span><img class="img1" src="images/0.png" alt=""></span>
-				<span><img class="img1" src="images/6.png" alt=""></span>
-				<span><img src="images/month.png" alt=""></span>
-				<span><img class="img1" src="images/2.png" alt=""></span>
-				<span><img class="img1" src="images/7.png" alt=""></span>
-				<span><img src="images/seven.png" alt=""></span>
-			</div>
-			<div class="col-sm-6 text-center">
-				<span><img class="img2" src="images/0.png" alt=""></span>
-				<span><img class="img2" src="images/0.png" alt=""></span>
-				<img src="images/sign.png" alt="">
-				<span><img class="img2" src="images/0.png" alt=""></span>
-				<span><img class="img2" src="images/0.png" alt=""></span>
-				<img src="images/sign.png" alt="">
-				<span><img class="img2" src="images/0.png" alt=""></span>
-				<span><img class="img2" src="images/0.png" alt=""></span>
-				<span style="margin-left: 10px;"><img src="images/week.png" alt=""></span>
-				<span><img src="images/two.png" alt=""></span>
-			</div>
-		</header>
-		<div id="navfirst">
-			<div class="panel panel-default">
-				<div id="html" class="list-group">
-					<div class="panel-heading list-group-item-info">
-						<h3 class="panel-title">HTML</h3>
-					</div>
-					<a href="html.html" class="list-group-item">部分标签</a>
+	<header id="header" class="row">
+		<div class="col-sm-6 text-center">
+			<span><img class="img1" src="images/2.png" alt=""></span>
+			<span><img class="img1" src="images/0.png" alt=""></span>
+			<span><img class="img1" src="images/1.png" alt=""></span>
+			<span><img class="img1" src="images/7.png" alt=""></span>
+			<span><img src="images/year.png" alt=""></span>
+			<span><img class="img1" src="images/0.png" alt=""></span>
+			<span><img class="img1" src="images/6.png" alt=""></span>
+			<span><img src="images/month.png" alt=""></span>
+			<span><img class="img1" src="images/2.png" alt=""></span>
+			<span><img class="img1" src="images/7.png" alt=""></span>
+			<span><img src="images/seven.png" alt=""></span>
+		</div>
+		<div class="col-sm-6 text-center">
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<img src="images/sign.png" alt="">
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<img src="images/sign.png" alt="">
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<span style="margin-left: 10px;"><img src="images/week.png" alt=""></span>
+			<span><img src="images/two.png" alt=""></span>
+		</div>
+	</header>
+	<div id="navfirst">
+		<div class="panel panel-default">
+			<div id="html" class="list-group">
+				<div class="panel-heading list-group-item-info">
+					<h3 class="panel-title">HTML</h3>
 				</div>
-			</div>
-			<div class="panel panel-default">
-				<div id="css" class="list-group">
-					<div class="panel-heading list-group-item-info">
-						<h3 class="panel-title">CSS</h3>
-					</div>
-					<a href="bgimg.html" class="list-group-item">背景与背景图片</a>
-					<a href="float.html" class="list-group-item">float、position</a>
-					<a href="z-index.html" class="list-group-item">z-index、! important</a>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div id="js" class="list-group">
-					<div class="panel-heading list-group-item-info">
-						<h3 class="panel-title">JS</h3>
-					</div>
-					<a href="time.html" class="list-group-item active">时间</a>
-					<a href="roll.html" class="list-group-item">轮播图</a>
-				</div>
-			</div>
-			<div class="list-group">
-				<a href="RegExp.html" class="list-group-item list-group-item-success">RegExp</a>
-			</div>
-			<div class="list-group">
-				<a href="http://www.w3school.com.cn/index.html" class="list-group-item list-group-item-success" target="_blank">W3C</a>
+				<a href="html.html" class="list-group-item">部分标签</a>
+				<a href="canvas.html" class="list-group-item">canvas</a>
 			</div>
 		</div>
-		<div id="main">
-			<div class="div1">
-				<h3>日期的获取</h3>
-				<p>获取部分日期：年、月、日、小时、分钟、秒、毫秒</p>
-				<pre>var oDate = new Date();<br>oDate.getFullYear(); = new Date().getFullYear();<br><span title="因为月份是从0开始的所有要加1">oDate.getMonth() + 1;</span><br>oDate.getDate();<br>oDate.getHours();<br>oDate.getMinutes();<br>oDate.getSeconds();<br>oDate.getDay();</pre>
-				<div class="row">
-					<div class="col-sm-2">
-						<div class="input-group">
-							<input type="text" class="form-control" id="input1" placeholder="年">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="button">获取</button>
-							</span>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="input-group">
-							<input type="text" class="form-control" id="input2" placeholder="月">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="button">获取</button>
-							</span>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="input-group">
-							<input type="text" class="form-control" id="input3" placeholder="日">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="button">获取</button>
-							</span>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="input-group">
-							<input type="text" class="form-control" id="input4" placeholder="小时">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="button">获取</button>
-							</span>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="input-group">
-							<input type="text" class="form-control" id="input5" placeholder="分钟">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="button">获取</button>
-							</span>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="input-group">
-							<input type="text" class="form-control" id="input6" placeholder="秒">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="button">获取</button>
-							</span>
-						</div>
-					</div>
-					<div class="col-sm-2">
-						<div class="input-group">
-							<input type="text" class="form-control" id="input7" placeholder="星期">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="button">获取</button>
-							</span>
-						</div>
-					</div>
-					<span class="col-sm-2">
-						<button class="btn btn-default">全部获取</button>
-						<button class="btn btn-info" style="float: right;">清空</button>
-					</span>
+		<div class="panel panel-default">
+			<div id="css" class="list-group">
+				<div class="panel-heading list-group-item-info">
+					<h3 class="panel-title">CSS</h3>
 				</div>
+				<a href="bgimg.html" class="list-group-item">背景与背景图片</a>
+				<a href="float.html" class="list-group-item">float、position</a>
+				<a href="2D-3D.html" class="list-group-item">2D、3D、transition</a>
 			</div>
-			<div class="div2">
-				<h3>日期的设置</h3>
-				<p>设置部分日期。<br>年（四位数）；月（0～11）；日（0～31）没有31天的月份写31会自动向上加；小时（0～23）；分钟（0～59）；秒（0～59）；毫秒（0～999）。<br>oDate加上日期的方法，oDate这个变量将改变日期，new Date()的日期不变。<br>new Date()的下面部分方法返回的都是毫秒数，从 1970 年 1 月 1 日至方法里日期的毫秒数。<br>setTime()能使用的，new Date()都能用，new Date()能在括号里加日期，setTime()不行；new Date(1111)==setTime(1111)，new Date(2017, 7, 1)有，<del>setTime(2017, 7, 1)</del>没有</p>
-				<pre><span>2017.07.01 00:00:00 GMT+0800</span>oDate.setTime显示为：<br><span>var oDate = new Date();</span><br>oDate.setFullYear(2008,6,1); ≠ new Date().setFullYear(2008,6,1);<br><span>setFullYear(年(必填),月(可选),日(可选))</span>Tue Jul 01 <b>2008</b> 00:00:00 GMT+0800<br>oDate.setMonth(7,1);<br><span>setMonth(月(必填),日(可选))</span>Tue <b>Aug</b> 01 2017 00:00:00 GMT+0800<br>oDate.setDate(10);<br><span>setDate(日(必填))</span>Mon Jul <b>10</b> 2017 00:00:00 GMT+0800<br>oDate.setHours(12);<br><span>setHours(小时(必填),分钟(可选),秒(可选),毫秒(可选))</span>Sat Jul 01 2017 <b>12</b>:00:00 GMT+0800<br>oDate.setMinutes(12);<br><span>setMinutes(分钟(必填),秒(可选),毫秒(可选))</span>Sat Jul 01 2017 00:<b>12</b>:00 GMT+0800<br>oDate.setSeconds(12);<br><span>setSeconds(秒(必填),毫秒(可选))</span>Sat Jul 01 2017 00:00:<b>12</b> GMT+0800<br>oDate.setMilliseconds(12);<br><span>setMilliseconds(毫秒(必填))</span>Sat Jul 01 2017 00:00:00 GMT+0800<br>oDate.setTime(11111111111111)<br><span>setTime(毫秒(必填))</span>Mon Feb 06 2322 03:45:11 GMT+0800</pre>
+		</div>
+		<div class="panel panel-default">
+			<div id="js" class="list-group">
+				<div class="panel-heading list-group-item-info">
+					<h3 class="panel-title">JS</h3>
+				</div>
+				<a href="time.html" class="list-group-item active">时间</a>
+				<a href="roll.html" class="list-group-item">轮播图</a>
 			</div>
-			<div class="div3">
-				<h3>日期的显示</h3>
-				<p>Date()显示当前日期和以特定的格式显示日期。<br>Date()没有方法只能显示当前时间并且为字符串，new Date()有方法能显示当前时间并且为object对象。<br>new Date()括号里可以放毫秒和日期（yyyy-MM-dd HH:mm:ss）后面可以使用方法。</p>
-				<pre><span>2017.07.01 19:00:00 GMT+0800</span> <span>显示为：</span>格式：<br><span>Date();</span> <span>Sat Jul 01 2017 12:00:00 GMT+0800</span>全部显示<br><span>new Date();</span> Sat Jul 01 2017 12:00:00 GMT+0800<br><span>new Date(11111111111111);</span> Mon Feb 06 2322 03:45:11 GMT+0800<br><span>new Date(2017, 6, 1, 12, 00, 00);</span> Sat Jul 01 2017 12:00:00 GMT+0800<br>特定格式：<br><span>new Date().toDateString();</span> <span>Sat Jul 01 2017</span>周/月/日/年<br><span>new Date().toTimeString();</span> <span>19:00:00 GMT+0800</span>时/分/秒 时区（24小时制）<br><span>new Date().toLocaleDateString();</span> <span>2017/7/1</span>年/月/日<br><span>new Date().toLocaleTimeString();</span> <span>下午7:00:00</span>时/分/秒 时区（12小时制）<br><span>new Date().toUTCString();</span> <span>Sat, 01 Jul 2017 11:00:00 GMT</span>周/日/月/年/时/分/秒</pre>
-			</div>
-			<div class="div3">
-				<h3>日期的其他方法</h3>
-				<p>返回从 1970 年 1 月 1 日至今的毫秒数parse()和UTC()。<br>parse( 字符串)；UTC(日期或日期的方法)；<br>getTimezoneOffset()返回本地时间和 UTC 时间相差的分钟数</p>
-				<pre><span>Date.parse('2017, 7, 1')</span>1498838400000<br><span>Date.UTC(2017, 6, 1)</span>1498867200000<br><span>new Date().getTimezoneOffset()</span>-480<br>Date对象转换为字符串<br><span>toString()</span>把Date对象转换为字符串<br><span>toLocaleString()</span>根据本地时间格式，把Date对象转换为字符串<br><span>toTimeString()</span>把Date对象的时间部分转换为字符串<br><span>toLocaleTimeString()</span>根据本地时间格式，把Date对象的时间部分转换为字符串<br><span>toDateString()</span>把Date对象的日期部分转换为字符串<br><span>toLocaleDateString()</span>根据本地时间格式，把Date对象的日期部分转换为字符串</pre>
-			</div>
-			<div style="padding: 20px 0; color: red;">日期的显示和设置都有UTC方法，如 有getDate()和setDate()就有getUTCDate()和setUTCDate()。还有一个toUTCString()。</div>
+		</div>
+		<div class="list-group">
+			<a href="RegExp.html" class="list-group-item list-group-item-success">RegExp</a>
+		</div>
+		<div class="list-group">
+			<a href="http://www.w3school.com.cn/index.html" class="list-group-item list-group-item-success" target="_blank">W3C</a>
+		</div>
+	</div>
+	<div id="main">
+		<div class="div1">
+			<h3>日期的获取</h3>
+			<p>获取部分日期：年、月、日、小时、分钟、秒、毫秒</p>
+			<pre>var oDate = new Date();<br>oDate.getFullYear(); = new Date().getFullYear();<br><span title="因为月份是从0开始的所有要加1">oDate.getMonth() + 1;</span><br>oDate.getDate();<br>oDate.getHours();<br>oDate.getMinutes();<br>oDate.getSeconds();<br>oDate.getDay();</pre>
 			<div class="row">
-				<div class="time col-sm-9 text-center center-block" style="float: none;">
-					<span><img class="img3" src="images/time.jpg" alt=""></span>
-					<span><img class="img3" src="images/time.jpg" alt=""></span>
-					<span><img src="images/sign2.png" alt=""></span>
-					<span><img class="img3" src="images/time.jpg" alt=""></span>
-					<span><img class="img3" src="images/time.jpg" alt=""></span>
-					<span><img src="images/sign2.png" alt=""></span>
-					<span><img class="img3" src="images/time.jpg" alt=""></span>
-					<span><img class="img3" src="images/time.jpg" alt=""></span>
+				<div class="col-sm-2">
+					<div class="input-group">
+						<input type="text" class="form-control" id="input1" placeholder="年">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">获取</button>
+						</span>
+					</div>
 				</div>
+				<div class="col-sm-2">
+					<div class="input-group">
+						<input type="text" class="form-control" id="input2" placeholder="月">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">获取</button>
+						</span>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="input-group">
+						<input type="text" class="form-control" id="input3" placeholder="日">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">获取</button>
+						</span>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="input-group">
+						<input type="text" class="form-control" id="input4" placeholder="小时">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">获取</button>
+						</span>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="input-group">
+						<input type="text" class="form-control" id="input5" placeholder="分钟">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">获取</button>
+						</span>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="input-group">
+						<input type="text" class="form-control" id="input6" placeholder="秒">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">获取</button>
+						</span>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="input-group">
+						<input type="text" class="form-control" id="input7" placeholder="星期">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">获取</button>
+						</span>
+					</div>
+				</div>
+				<span class="col-sm-2">
+					<button class="btn btn-default">全部获取</button>
+					<button class="btn btn-info" style="float: right;">清空</button>
+				</span>
+			</div>
+		</div>
+		<div class="div2">
+			<h3>日期的设置</h3>
+			<p>设置部分日期。<br>年（四位数）；月（0～11）；日（0～31）没有31天的月份写31会自动向上加；小时（0～23）；分钟（0～59）；秒（0～59）；毫秒（0～999）。<br>oDate加上日期的方法，oDate这个变量将改变日期，new Date()的日期不变。<br>new Date()的下面部分方法返回的都是毫秒数，从 1970 年 1 月 1 日至方法里日期的毫秒数。<br>setTime()能使用的，new Date()都能用，new Date()能在括号里加日期，setTime()不行；new Date(1111)==setTime(1111)，new Date(2017, 7, 1)有，<del>setTime(2017, 7, 1)</del>没有</p>
+			<pre><span>2017.07.01 00:00:00 GMT+0800</span>oDate.setTime显示为：<br><span>var oDate = new Date();</span><br>oDate.setFullYear(2008,6,1); ≠ new Date().setFullYear(2008,6,1);<br><span>setFullYear(年(必填),月(可选),日(可选))</span>Tue Jul 01 <b>2008</b> 00:00:00 GMT+0800<br>oDate.setMonth(7,1);<br><span>setMonth(月(必填),日(可选))</span>Tue <b>Aug</b> 01 2017 00:00:00 GMT+0800<br>oDate.setDate(10);<br><span>setDate(日(必填))</span>Mon Jul <b>10</b> 2017 00:00:00 GMT+0800<br>oDate.setHours(12);<br><span>setHours(小时(必填),分钟(可选),秒(可选),毫秒(可选))</span>Sat Jul 01 2017 <b>12</b>:00:00 GMT+0800<br>oDate.setMinutes(12);<br><span>setMinutes(分钟(必填),秒(可选),毫秒(可选))</span>Sat Jul 01 2017 00:<b>12</b>:00 GMT+0800<br>oDate.setSeconds(12);<br><span>setSeconds(秒(必填),毫秒(可选))</span>Sat Jul 01 2017 00:00:<b>12</b> GMT+0800<br>oDate.setMilliseconds(12);<br><span>setMilliseconds(毫秒(必填))</span>Sat Jul 01 2017 00:00:00 GMT+0800<br>oDate.setTime(11111111111111)<br><span>setTime(毫秒(必填))</span>Mon Feb 06 2322 03:45:11 GMT+0800</pre>
+		</div>
+		<div class="div3">
+			<h3>日期的显示</h3>
+			<p>Date()显示当前日期和以特定的格式显示日期。<br>Date()没有方法只能显示当前时间并且为字符串，new Date()有方法能显示当前时间并且为object对象。<br>new Date()括号里可以放毫秒和日期（yyyy-MM-dd HH:mm:ss）后面可以使用方法。</p>
+			<pre><span>2017.07.01 19:00:00 GMT+0800</span> <span>显示为：</span>格式：<br><span>Date();</span> <span>Sat Jul 01 2017 12:00:00 GMT+0800</span>全部显示<br><span>new Date();</span> Sat Jul 01 2017 12:00:00 GMT+0800<br><span>new Date(11111111111111);</span> Mon Feb 06 2322 03:45:11 GMT+0800<br><span>new Date(2017, 6, 1, 12, 00, 00);</span> Sat Jul 01 2017 12:00:00 GMT+0800<br>特定格式：<br><span>new Date().toDateString();</span> <span>Sat Jul 01 2017</span>周/月/日/年<br><span>new Date().toTimeString();</span> <span>19:00:00 GMT+0800</span>时/分/秒 时区（24小时制）<br><span>new Date().toLocaleDateString();</span> <span>2017/7/1</span>年/月/日<br><span>new Date().toLocaleTimeString();</span> <span>下午7:00:00</span>时/分/秒 时区（12小时制）<br><span>new Date().toUTCString();</span> <span>Sat, 01 Jul 2017 11:00:00 GMT</span>周/日/月/年/时/分/秒</pre>
+		</div>
+		<div class="div3">
+			<h3>日期的其他方法</h3>
+			<p>返回从 1970 年 1 月 1 日至今的毫秒数parse()和UTC()。<br>parse( 字符串)；UTC(日期或日期的方法)；<br>getTimezoneOffset()返回本地时间和 UTC 时间相差的分钟数</p>
+			<pre><span>Date.parse('2017, 7, 1')</span>1498838400000<br><span>Date.UTC(2017, 6, 1)</span>1498867200000<br><span>new Date().getTimezoneOffset()</span>-480<br>Date对象转换为字符串<br><span>toString()</span>把Date对象转换为字符串<br><span>toLocaleString()</span>根据本地时间格式，把Date对象转换为字符串<br><span>toTimeString()</span>把Date对象的时间部分转换为字符串<br><span>toLocaleTimeString()</span>根据本地时间格式，把Date对象的时间部分转换为字符串<br><span>toDateString()</span>把Date对象的日期部分转换为字符串<br><span>toLocaleDateString()</span>根据本地时间格式，把Date对象的日期部分转换为字符串</pre>
+		</div>
+		<div style="padding: 20px 0; color: red;">日期的显示和设置都有UTC方法，如 有getDate()和setDate()就有getUTCDate()和setUTCDate()。还有一个toUTCString()。</div>
+		<div class="row">
+			<div class="time col-sm-9 text-center center-block" style="float: none;">
+				<span><img class="img3" src="images/time.jpg" alt=""></span>
+				<span><img class="img3" src="images/time.jpg" alt=""></span>
+				<span><img src="images/sign2.png" alt=""></span>
+				<span><img class="img3" src="images/time.jpg" alt=""></span>
+				<span><img class="img3" src="images/time.jpg" alt=""></span>
+				<span><img src="images/sign2.png" alt=""></span>
+				<span><img class="img3" src="images/time.jpg" alt=""></span>
+				<span><img class="img3" src="images/time.jpg" alt=""></span>
 			</div>
 		</div>
 	</div>

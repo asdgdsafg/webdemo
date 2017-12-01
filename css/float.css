@@ -1,13 +1,11 @@
-#main .overflow.lt {
+#main .overflow.lt,
+#main .overflow.rt {
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 }
 #main .overflow.rt {
 	overflow: hidden;
-	padding: 10px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
 }
 #main .overflow .left {
 	float: left;

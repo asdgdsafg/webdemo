@@ -1,5 +1,6 @@
 $(function () {
 	//下拉轮播图
+
 	//显示隐藏左右按钮
 	$('#main').children('.one-roll').hover(function () {
 		$('#main').children('.one-roll').children('.btn-left, .btn-right').stop().fadeIn('slow');
@@ -57,11 +58,8 @@ $(function () {
 		})(i)
 	}
 
-
-
-
-
 	//无缝轮播图
+
 	//显示隐藏左右按钮
 	$('#main').children('.two-roll').hover(function () {
 		$('#main').children('.two-roll').children('.btn-left, .btn-right').stop().fadeIn('slow');
@@ -114,6 +112,7 @@ $(function () {
 		leftWidth = $('#main').children('.one-roll').children('.banner1').children('li').width() / 2 - 75;
 		$('#main').children('.one-roll').children('.btn-right').css('right', '10px').end().children('.one-in').css('left', leftWidth);
 		$('#main').children('.two-roll').children('.banner2').children('li').css('width', newWidth * -1).end().end().children('.two-in').css('left', leftWidth);
+		$('#main .two-roll .banner2').css('margin-left', newWidth + 'px');
 	}
 	change();
 	$(window).resize(function () {

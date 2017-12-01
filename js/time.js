@@ -1,8 +1,7 @@
 $(function() {
 	var arr = [];
 	var oDate = null;
-	for (var i = 0; i < 7; i++) {
-		//给7个按钮赋予点击事件
+	for (var i = 0; i < 7; i++) {		//给7个按钮赋予点击事件
 		butOne(i);
 	}
 	function butOne(num) {
@@ -19,13 +18,10 @@ $(function() {
 		$('#main').children('.div1').children('div.row').children('span').find('button').eq(num).click(function () {
 			firstTime(num);
 			if (num == 0) {
-				//先取消定时器，防止重复开启
-				clearInterval(timer1);
-				//当点击第一个按钮时执行定时器
-				timer1 = setInterval(firstTime, 100);
+				clearInterval(timer1);		//先取消定时器，防止重复开启
+				timer1 = setInterval(firstTime, 1000);		//当点击第一个按钮时执行定时器
 			} else {
-				//当点击第二个按钮时取消定时器
-				clearInterval(timer1);
+				clearInterval(timer1);		//当点击第二个按钮时取消定时器
 			}
 		})
 	}
@@ -46,7 +42,7 @@ $(function() {
 		}
 	}
 	var timer2 = null;
-	timer2 = setInterval(lastTime, 100);
+	timer2 = setInterval(lastTime, 1000);
 	lastTime();
 	function lastTime() {
 		oDate = new Date();

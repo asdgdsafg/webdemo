@@ -47,7 +47,7 @@ window.onload = function () {
 				ctx.strokeText(i, 0, -145);
 				ctx.restore();
 			}
-		})()
+		})();
 		ctx.restore();
 		//圆点
 		point(13, 30);				//5个大圆点，每个圆点移动30度
@@ -71,7 +71,11 @@ window.onload = function () {
 				ctx.beginPath();
 				ctx.rotate(i * num2 * Math.PI / 180);
 				ctx.arc(116, 0, num3, 0, 2 * Math.PI, false);
-				ctx.strokeStyle = 'magenta';
+				if (num1 == 60) {
+					ctx.strokeStyle = 'magenta';
+				} else if (num1 == 13) {
+					ctx.strokeStyle = 'blue';
+				}
 				ctx.stroke();
 				ctx.restore();
 			}

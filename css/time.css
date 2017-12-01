@@ -18,7 +18,6 @@
 }
 #main .time span {
 	display: inline-block;
-	/*float: left;*/
 	width: 55px;
 	overflow: hidden;
 	position: relative;
@@ -32,7 +31,3 @@
 	transition: 1s;
 	transform: rotateX(0deg);
 }
-/*#main .left:hover .img1 {
-	transform: rotateX(180deg);
-	opacity: 0;
-}*/

@@ -8,7 +8,7 @@ $(function () {
 		$('#main').children('.panel').eq(1).find(ele1).click(function () {
 			if($('#main').children('.panel').eq(1).find(ele2).is(':hidden')){
 				$('#main').children('.panel').eq(1).find(ele2).show();
-			}else{
+			} else{
 				$('#main').children('.panel').eq(1).find(ele2).hide();
 				$('#main').children('.panel').eq(1).find(ele3).hide();
 			}

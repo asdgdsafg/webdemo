@@ -14,7 +14,7 @@ $(function () {
 		} else {
 			clearInterval(timer);
 			$('.topimg').css({
-				'top' : '0',
+				'top' : '0'
 			})
 		}
 	}

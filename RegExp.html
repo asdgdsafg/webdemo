@@ -6,160 +6,176 @@
 	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
-	<link rel="stylesheet" type="text/css" href="css/RegExp.css">
+	<style>
+		#main .table th:first-child {
+			width: 20%;
+		}
+		#main .table td:first-child {
+			width: 25%;
+		}
+	</style>
 </head>
 <body>
-	<div id="wrapper">
-		<header id="header" class="row">
-			<div class="col-sm-6 text-center">
-				<span><img class="img1" src="images/2.png" alt=""></span>
-				<span><img class="img1" src="images/0.png" alt=""></span>
-				<span><img class="img1" src="images/1.png" alt=""></span>
-				<span><img class="img1" src="images/7.png" alt=""></span>
-				<span><img src="images/year.png" alt=""></span>
-				<span><img class="img1" src="images/0.png" alt=""></span>
-				<span><img class="img1" src="images/6.png" alt=""></span>
-				<span><img src="images/month.png" alt=""></span>
-				<span><img class="img1" src="images/2.png" alt=""></span>
-				<span><img class="img1" src="images/7.png" alt=""></span>
-				<span><img src="images/seven.png" alt=""></span>
-			</div>
-			<div class="col-sm-6 text-center">
-				<span><img class="img2" src="images/0.png" alt=""></span>
-				<span><img class="img2" src="images/0.png" alt=""></span>
-				<img src="images/sign.png" alt="">
-				<span><img class="img2" src="images/0.png" alt=""></span>
-				<span><img class="img2" src="images/0.png" alt=""></span>
-				<img src="images/sign.png" alt="">
-				<span><img class="img2" src="images/0.png" alt=""></span>
-				<span><img class="img2" src="images/0.png" alt=""></span>
-				<span style="margin-left: 10px;"><img src="images/week.png" alt=""></span>
-				<span><img src="images/two.png" alt=""></span>
-			</div>
-		</header>
-		<div id="navfirst">
-			<div class="panel panel-default">
-				<div id="html" class="list-group">
-					<div class="panel-heading list-group-item-info">
-						<h3 class="panel-title">HTML</h3>
-					</div>
-					<a href="html.html" class="list-group-item">部分标签</a>
+	<header id="header" class="row">
+		<div class="col-sm-6 text-center">
+			<span><img class="img1" src="images/2.png" alt=""></span>
+			<span><img class="img1" src="images/0.png" alt=""></span>
+			<span><img class="img1" src="images/1.png" alt=""></span>
+			<span><img class="img1" src="images/7.png" alt=""></span>
+			<span><img src="images/year.png" alt=""></span>
+			<span><img class="img1" src="images/0.png" alt=""></span>
+			<span><img class="img1" src="images/6.png" alt=""></span>
+			<span><img src="images/month.png" alt=""></span>
+			<span><img class="img1" src="images/2.png" alt=""></span>
+			<span><img class="img1" src="images/7.png" alt=""></span>
+			<span><img src="images/seven.png" alt=""></span>
+		</div>
+		<div class="col-sm-6 text-center">
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<img src="images/sign.png" alt="">
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<img src="images/sign.png" alt="">
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<span style="margin-left: 10px;"><img src="images/week.png" alt=""></span>
+			<span><img src="images/two.png" alt=""></span>
+		</div>
+	</header>
+	<div id="navfirst">
+		<div class="panel panel-default">
+			<div id="html" class="list-group">
+				<div class="panel-heading list-group-item-info">
+					<h3 class="panel-title">HTML</h3>
 				</div>
-			</div>
-			<div class="panel panel-default">
-				<div id="css" class="list-group">
-					<div class="panel-heading list-group-item-info">
-						<h3 class="panel-title">CSS</h3>
-					</div>
-					<a href="bgimg.html" class="list-group-item">背景与背景图片</a>
-					<a href="float.html" class="list-group-item">float、position</a>
-					<a href="z-index.html" class="list-group-item">z-index、! important</a>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div id="js" class="list-group">
-					<div class="panel-heading list-group-item-info">
-						<h3 class="panel-title">JS</h3>
-					</div>
-					<a href="time.html" class="list-group-item">时间</a>
-					<a href="roll.html" class="list-group-item">轮播图</a>
-				</div>
-			</div>
-			<div class="list-group">
-				<a href="RegExp.html" class="list-group-item list-group-item-success active">RegExp</a>
-			</div>
-			<div class="list-group">
-				<a href="http://www.w3school.com.cn/index.html" class="list-group-item list-group-item-success" target="_blank">W3C</a>
+				<a href="html.html" class="list-group-item">部分标签</a>
+				<a href="canvas.html" class="list-group-item">canvas</a>
 			</div>
 		</div>
-		<div id="main">
-			<h3 style="margin-top: 0;">正则表达式(regular expression)</h3>
-			<h4>1. 创建正则表达式</h4>
-			<div class="panel panel-default">
-				<table class="table">
-					<tr><td>var box = new RegExp('box');</td><td>第一个参数字符串</td></tr>
-					<tr><td>var box = /box/;</td><td>同上，为简写方式</td></tr>
-					<tr><td>var box = new RegExp('box', 'i');</td><td>第二个参数可选模式修饰符</td></tr>
-					<tr><td>var box = /box/i;</td><td>同上，为简写方式</td></tr>
-				</table>
+		<div class="panel panel-default">
+			<div id="css" class="list-group">
+				<div class="panel-heading list-group-item-info">
+					<h3 class="panel-title">CSS</h3>
+				</div>
+				<a href="bgimg.html" class="list-group-item">背景与背景图片</a>
+				<a href="float.html" class="list-group-item">float、position</a>
+				<a href="2D-3D.html" class="list-group-item">2D、3D、transition</a>
 			</div>
-			<h4>2. 模式修饰符的可选参数</h4>
-			<div class="panel panel-default">
-				<table class="table">
-					<tr><td>var box = /box/<b>i</b>;</td><td>i 忽略大小写</td></tr>
-					<tr><td>var box = /box/<b>g</b>;</td><td>g 全局匹配</td></tr>
-					<tr><td>var box = /box/<b>m</b>;</td><td>m 多行匹配</td></tr>
-					<tr><td>var box = /box/<b>igm</b>;</td><td>igm 全部使用</td></tr>
-					<tr><td>lastIndex</td><td>该属性存放一个整数，它声明的是上一次匹配文本之后的第一个字符的位置；<a class="text-primary" href="http://www.w3school.com.cn/jsref/jsref_lastindex_regexp.asp" target="_blank">W3C详细解释</a></td></tr>
-				</table>
+		</div>
+		<div class="panel panel-default">
+			<div id="js" class="list-group">
+				<div class="panel-heading list-group-item-info">
+					<h3 class="panel-title">JS</h3>
+				</div>
+				<a href="time.html" class="list-group-item">时间</a>
+				<a href="roll.html" class="list-group-item">轮播图</a>
 			</div>
-			<h4>3. RegExp对象的方法</h4>
-			<div class="panel panel-default">
-				<table class="table">
-					<tr><td>test()</td><td>在字符串中测试模式匹配，返回 true 或 false</td></tr>
-					<tr><td>exec()</td><td>返回一个数组，其中存放匹配的结果。如果未找到匹配，则返回值为 null；<a class="text-primary" href="http://www.w3school.com.cn/jsref/jsref_exec_regexp.asp" target="_blank">W3C详细解释</a></td></tr>
-				</table>
-			</div>
-			<h4>4. String 对象中的正则表达式方法</h4>
-			<div class="panel panel-default">
-				<table class="table">
-					<tr><td>match(pattern)</td><td>返回 pattern 中的子串或 null</td></tr>
-					<tr><td>replace(pattern, replacement)</td><td>用 replacement 替换 pattern</td></tr>
-					<tr><td>search(pattern)</td><td>返回字符串中 pattern 开始位置</td></tr>
-					<tr><td>split(pattern)</td><td>返回字符串按指定 pattern 拆分的数组</td></tr>
-				</table>
-			</div>
-			<h4>5. 元字符</h4>
-			<div class="panel panel-default">
-				<div class="panel-heading">5.1 单个字符</div>
-				<table class="table">
-					<tr><th>.</th><td>匹配除 "\n" 之外的任何单个字符；要匹配包括 '\n' 在内的任何字符，请使用像"(.|\n)"的模式</td></tr>
-					<tr><th>[abc]</th><td>匹配所包含的任意一个字符。例如， '[abc]' 可以匹配 "plain" 中的 'a'</td></tr>
-					<tr><th>[^abc]</th><td>匹配未包含的任意字符。例如， '[^abc]' 可以匹配 "plain" 中的'p'、'l'、'i'、'n'</td></tr>
-					<tr><th>[a-z0-9]</th><td>匹配括号中的字符集中的任意字符</td></tr>
-					<tr><th>[^a-z0-9]</th><td>匹配非括号中的字符集中的任意字符</td></tr>
-					<tr><th>\d</th><td>匹配数字</td></tr>
-					<tr><th>\D</th><td>匹配非数字</td></tr>
-					<tr><th>\w</th><td>匹配字母和数字及_</td></tr>
-					<tr><th>\W</th><td>匹配非字母和数字及_</td></tr>
-				</table>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">5.2 空白字符</div>
-				<table class="table">
-					<tr><th>\b</th><td>匹配空格字符</td></tr>
-					<tr><th>\f</th><td>匹配一个换页符</td></tr>
-					<tr><th>\n</th><td>匹配换行符</td></tr>
-					<tr><th>\r</th><td>匹配一个回车符</td></tr>
-					<tr><th>\t</th><td>匹配制表符</td></tr>
-					<tr><th>\s</th><td>匹配空白字符、空格、制表符和换行符；等价于 [ \f\n\r\t\v]</td></tr>
-					<tr><th>\S</th><td>匹配非空白字符</td></tr>
-				</table>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">5.3 锚字符</div>
-				<table class="table">
-					<tr><th>^</th><td>行首匹配</td></tr>
-					<tr><th>$</th><td>行尾匹配</td></tr>
-					<tr><th>\A</th><td>只有匹配字符串开始处</td></tr>
-					<tr><th>\b</th><td>匹配单词边界，也就是指单词和空格间的位置；例如， 'er\b' 可以匹配"never" 中的 'er'，但不能匹配 "verb" 中的 'er'；词在[]内时无效</td></tr>
-					<tr><th>\B</th><td>匹配非单词边界，'er\B' 能匹配 "verb" 中的 'er'，但不能匹配 "never" 中的 'er'</td></tr>
-					<tr><th>\z</th><td>只匹配字符串结束处</td></tr>
-					<tr><th>abc|def|ghi</th><td>匹配 abc 或 def 或 ghi 中任意一个</td></tr>
-				</table>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading">5.4 重复字符</div>
-				<table class="table">
-					<tr><th>n?</th><td>匹配 0 个或 1 个 n</td></tr>
-					<tr><th>n*</th><td>匹配 0 个或任意多个 n</td></tr>
-					<tr><th>n+</th><td>匹配至少一个 n</td></tr>
-					<tr><th>(abc)?</th><td>匹配 0 个或 1 个(abc)</td></tr>
-					<tr><th>n{x}</th><td>匹配 x 个 n</td></tr>
-					<tr><th>n{x,}</th><td>匹配至少 x 个 n</td></tr>
-					<tr><th>n{x, y}</th><td>匹配最少 x 个、最多 y 个 n</td></tr>
-				</table>
-			</div>
+		</div>
+		<div class="list-group">
+			<a href="RegExp.html" class="list-group-item list-group-item-success active">RegExp</a>
+		</div>
+		<div class="list-group">
+			<a href="http://www.w3school.com.cn/index.html" class="list-group-item list-group-item-success" target="_blank">W3C</a>
+		</div>
+	</div>
+	<div id="main">
+		<h3 style="margin-top: 0;">正则表达式(regular expression)</h3>
+		<h4>1. 创建正则表达式</h4>
+		<div class="panel panel-default">
+			<table class="table">
+				<tr><td>var box = new RegExp('box');</td><td>第一个参数字符串</td></tr>
+				<tr><td>var box = /box/;</td><td>同上，为简写方式</td></tr>
+				<tr><td>var box = new RegExp('box', 'i');</td><td>第二个参数可选模式修饰符</td></tr>
+				<tr><td>var box = /box/i;</td><td>同上，为简写方式</td></tr>
+			</table>
+		</div>
+		<h4>2. 模式修饰符的可选参数</h4>
+		<div class="panel panel-default">
+			<table class="table">
+				<tr><td>var box = /box/<b>i</b>;</td><td>i 忽略大小写</td></tr>
+				<tr><td>var box = /box/<b>g</b>;</td><td>g 全局匹配</td></tr>
+				<tr><td>var box = /box/<b>m</b>;</td><td>m 多行匹配</td></tr>
+				<tr><td>var box = /box/<b>igm</b>;</td><td>igm 全部使用</td></tr>
+				<tr><td>lastIndex</td><td>该属性存放一个整数，它声明的是上一次匹配文本之后的第一个字符的位置；<a class="text-primary" href="http://www.w3school.com.cn/jsref/jsref_lastindex_regexp.asp" target="_blank">W3C详细解释</a></td></tr>
+			</table>
+		</div>
+		<h4>3. RegExp对象的方法</h4>
+		<div class="panel panel-default">
+			<table class="table">
+				<tr><td>test()</td><td><code>/[a-z0-9]/.test(str)</code> 在字符串中测试模式匹配，返回 true 或 false</td></tr>
+				<tr><td>exec()</td><td>返回一个数组，其中存放匹配的结果。如果未找到匹配，则返回值为 null；<a class="text-primary" href="http://www.w3school.com.cn/jsref/jsref_exec_regexp.asp" target="_blank">W3C详细解释</a></td></tr>
+			</table>
+		</div>
+		<h4>4. String 对象中的正则表达式方法</h4>
+		<div class="panel panel-default">
+			<table class="table">
+				<tr><td>match(pattern)</td><td>返回 pattern 中的子串或 null</td></tr>
+				<tr><td>replace(pattern, replacement)</td><td>用 replacement 替换 pattern</td></tr>
+				<tr><td>search(pattern)</td><td>返回字符串中 pattern 开始位置</td></tr>
+				<tr><td>split(pattern)</td><td>返回字符串按指定 pattern 拆分的数组</td></tr>
+			</table>
+		</div>
+		<h4>5. 元字符</h4>
+		<div class="panel panel-default">
+			<div class="panel-heading">5.1 单个字符</div>
+			<table class="table">
+				<tr><th>.</th><td>匹配除 "\n" 之外的任何单个字符；要匹配包括 '\n' 在内的任何字符，请使用像"(.|\n)"的模式</td></tr>
+				<tr><th>[abc]</th><td>匹配所包含的任意一个字符。例如， '[abc]' 可以匹配 "plain" 中的 'a'</td></tr>
+				<tr><th>[^abc]</th><td>匹配未包含的任意字符。例如， '[^abc]' 可以匹配 "plain" 中的'p'、'l'、'i'、'n'</td></tr>
+				<tr><th>[a-z0-9]</th><td>匹配括号中的字符集中的任意字符</td></tr>
+				<tr><th>[^a-z0-9]</th><td>匹配非括号中的字符集中的任意字符</td></tr>
+				<tr><th>\d</th><td>匹配数字同 [0-9]</td></tr>
+				<tr><th>\D</th><td>匹配非数字同 [^0-9]</td></tr>
+				<tr><th>\w</th><td>匹配字母和数字及_同 [a-z0-9_]</td></tr>
+				<tr><th>\W</th><td>匹配非字母和数字及_同 [^a-z0-9_]</td></tr>
+			</table>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">5.2 空白字符</div>
+			<table class="table">
+				<tr><th>\b</th><td>匹配空格字符</td></tr>
+				<tr><th>\f</th><td>匹配一个换页符</td></tr>
+				<tr><th>\n</th><td>匹配换行符</td></tr>
+				<tr><th>\r</th><td>匹配一个回车符</td></tr>
+				<tr><th>\t</th><td>匹配制表符</td></tr>
+				<tr><th>\s</th><td>匹配空白字符、空格、制表符和换行符；等价于 [ \f\n\r\t\v]</td></tr>
+				<tr><th>\S</th><td>匹配非空白字符</td></tr>
+			</table>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">5.3 锚字符</div>
+			<table class="table">
+				<tr><th>^</th><td>行首匹配</td></tr>
+				<tr><th>$</th><td>行尾匹配</td></tr>
+				<tr><th>\A</th><td>只有匹配字符串开始处</td></tr>
+				<tr><th>\b</th><td>匹配单词边界，也就是指单词和空格间的位置；例如， 'er\b' 可以匹配"never" 中的 'er'，但不能匹配 "verb" 中的 'er'；词在[]内时无效</td></tr>
+				<tr><th>\B</th><td>匹配非单词边界，'er\B' 能匹配 "verb" 中的 'er'，但不能匹配 "never" 中的 'er'</td></tr>
+				<tr><th>\z</th><td>只匹配字符串结束处</td></tr>
+				<tr><th>abc|def|ghi</th><td>匹配 abc 或 def 或 ghi 中任意一个</td></tr>
+			</table>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">5.4 重复字符</div>
+			<table class="table">
+				<tr><th>n?</th><td>匹配 0 个或 1 个 n</td></tr>
+				<tr><th>n*</th><td>匹配 0 个或任意多个 n</td></tr>
+				<tr><th>n+</th><td>匹配至少一个 n</td></tr>
+				<tr><th>(abc)?</th><td>匹配 0 个或 1 个(abc)</td></tr>
+				<tr><th>n{x}</th><td>匹配 x 个 n</td></tr>
+				<tr><th>n{x,}</th><td>匹配至少 x 个 n</td></tr>
+				<tr><th>n{x, y}</th><td>匹配最少 x 个、最多 y 个 n</td></tr>
+			</table>
+		</div>
+		<h4 class="hidden">6. 常用正则</h4>
+		<div class="panel panel-default hidden">
+			<table class="table">
+				<tr><td>/^[0-9]{n, y}$/</td><td>匹配数字，至少n个数字，最多y个数字</td></tr>
+				<tr><td>/^[a-z]{n, y}$/</td><td>匹配字母，至少n个字母，最多y个字母</td></tr>
+				<tr><td>/^[a-z0-9]{n, y}$</td><td>匹配字母或数字，至少n个字母或数字，最多y个字母或数字</td></tr>
+				<tr><td>/^\s$/</td><td>匹配空白字符、空格、制表符和换行符</td></tr>
+				<tr><td>/^[a-z0-9][a-z0-9_.-_]{n, y}@[a-z0-9]{n, y}.[a-z]{2, 5}$/i</td><td>邮箱</td></tr>
+			</table>
 		</div>
 	</div>
 </body>

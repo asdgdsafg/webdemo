@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>2D、3D、transition</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<style>
+		#main .table td:first-child {
+			width: 25%;
+		}
+		.pro-hid,
+		.fn-hid,
+		.trans-hid {
+			color: #3c763d;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<header id="header" class="row">
+		<div class="col-sm-6 text-center">
+			<span><img class="img1" src="images/2.png" alt=""></span>
+			<span><img class="img1" src="images/0.png" alt=""></span>
+			<span><img class="img1" src="images/1.png" alt=""></span>
+			<span><img class="img1" src="images/7.png" alt=""></span>
+			<span><img src="images/year.png" alt=""></span>
+			<span><img class="img1" src="images/0.png" alt=""></span>
+			<span><img class="img1" src="images/6.png" alt=""></span>
+			<span><img src="images/month.png" alt=""></span>
+			<span><img class="img1" src="images/2.png" alt=""></span>
+			<span><img class="img1" src="images/7.png" alt=""></span>
+			<span><img src="images/seven.png" alt=""></span>
+		</div>
+		<div class="col-sm-6 text-center">
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<img src="images/sign.png" alt="">
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<img src="images/sign.png" alt="">
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<span><img class="img2" src="images/0.png" alt=""></span>
+			<span style="margin-left: 10px;"><img src="images/week.png" alt=""></span>
+			<span><img src="images/two.png" alt=""></span>
+		</div>
+	</header>
+	<div id="navfirst">
+		<div class="panel panel-default">
+			<div id="html" class="list-group">
+				<div class="panel-heading list-group-item-info">
+					<h3 class="panel-title">HTML</h3>
+				</div>
+				<a href="html.html" class="list-group-item">部分标签</a>
+				<a href="canvas.html" class="list-group-item">canvas</a>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div id="css" class="list-group">
+				<div class="panel-heading list-group-item-info">
+					<h3 class="panel-title">CSS</h3>
+				</div>
+				<a href="bgimg.html" class="list-group-item">背景与背景图片</a>
+				<a href="float.html" class="list-group-item">float、position</a>
+				<a href="2D-3D.html" class="list-group-item active">2D、3D、transition</a>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div id="js" class="list-group">
+				<div class="panel-heading list-group-item-info">
+					<h3 class="panel-title">JS</h3>
+				</div>
+				<a href="time.html" class="list-group-item">时间</a>
+				<a href="roll.html" class="list-group-item">轮播图</a>
+			</div>
+		</div>
+		<div class="list-group">
+			<a href="RegExp.html" class="list-group-item list-group-item-success">RegExp</a>
+		</div>
+		<div class="list-group">
+			<a href="http://www.w3school.com.cn/index.html" class="list-group-item list-group-item-success" target="_blank">W3C</a>
+		</div>
+	</div>
+	<div id="main">
+		<h3 style="margin-top: 0;">2D、3D</h3>
+		<p>所有变化前后的图形的中心点都不变，可使用<code>transform-origin</code>改变中心点</p>
+		<p>只有设置了<code>perspective</code>的值元素才会有Z轴，<code>perspective: none</code>元素则没有Z轴(就是2D元素)</p>
+		<h4>1. 旋转</h4>
+		<div class="panel panel-default">
+			<table class="table">
+				<tr><td>transform: rotate(180deg);</td><td><code>rotate()</code>括号里为度数，正值为顺时针方向旋转，负值相反，deg是degree的缩写，意为角度</td></tr>
+				<tr><td>transform: rotateX(180deg);</td><td><code>rotateX()</code>正值为从下到上翻转</td></tr>
+				<tr><td>transform: rotateY(180deg);</td><td><code>rotateY()</code>正值为从左到右翻转</td></tr>
+				<tr class="hidden"><td>transform: rotateZ(180deg);</td><td><code>rotateZ()</code>和<code>rotate()</code>一样</td></tr>
+				<tr><td>transform: rotate3d(<span style="color: red;">x</span>, <span style="color: #c7254e;">y</span>, <span style="color: blue;">z</span>, <span style="color: orange;">deg</span>);</td><td><code>rotate3d()</code>4个参数，<span style="color: red;">x</span><span style="color: #c7254e;">y</span><span style="color: blue;">z</span>的值为-1、0或1，-1为反方向，0为不旋转，1为正方向旋转，<span style="color: orange;">deg</span>为度数</td></tr>
+			</table>
+		</div>
+		<h4>2. 缩放</h4>
+		<div class="panel panel-default">
+			<table class="table">
+				<tr><td>transform: scale(0.8, 0.8);</td><td><code>scale()</code>宽高都缩小为0.8倍</td></tr>
+				<tr><td>transform: scaleX(0.8);</td><td><code>scaleX()</code>宽缩小为0.8倍</td></tr>
+				<tr><td>transform: scaleY(0.8);</td><td><code>scaleY()</code>高缩小为0.8倍</td></tr>
+				<tr><td>transform: scaleZ(0.8);</td><td><code>scaleZ()</code>需要配合<code>rotateX()</code>使用</td></tr>
+				<tr><td>transform: scale3d(x, y, z);</td><td><code>scale3d()</code>需要配合<code>rotateX()</code>使用</td></tr>
+			</table>
+		</div>
+		<h4>3. 移动</h4>
+		<div class="panel panel-default">
+			<table class="table">
+				<tr><td>transform: translate(100px, 100px);</td><td><code>translate()</code>从当前位置向XY轴各移动100px</td></tr>
+				<tr><td>transform: translateX(100px);</td><td><code>translateX()</code>从当前位置向X轴移动100px</td></tr>
+				<tr><td>transform: translateY(100px);</td><td><code>translateY()</code>从当前位置向Y轴移动100px</td></tr>
+				<tr><td>transform: translateZ(100px);</td><td><code>translateZ()</code>从当前位置向Z轴移动100px</td></tr>
+				<tr><td>transform: translate3d(x, y, z);</td><td><code>translate3d()</code>从当前位置向xyZ各轴移动</td></tr>
+			</table>
+		</div>
+		<h4>4. 斜拉</h4>
+		<div class="panel panel-default">
+			<table class="table">
+				<tr><td>transform: skew(10deg, 10deg);</td><td><code>skew()</code>从当前位置向XY各斜拉10度</td></tr>
+				<tr><td>transform: skewX(10deg);</td><td><code>skewX()</code>从当前位置向X斜拉10度</td></tr>
+				<tr><td>transform: skewY(10deg);</td><td><code>skewY()</code>从当前位置向Y斜拉10度</td></tr>
+			</table>
+		</div>
+		<h4>5. 其他</h4>
+		<div class="panel panel-default">
+			<table class="table">
+				<tr><td>transform: rotate() scale() translate();</td><td>旋转、缩放、移动、倾斜、透视点根据组合需要选择使用</td></tr>
+				<tr><td>transform-origin: left top;</td><td>改变中心点</td></tr>
+				<tr><td>perspective: 500;</td><td>透视点，拥有3D效果（等于<code>transform: perspective() + transform-style</code>） <a class="hidden" href="https://www.cnblogs.com/MirageFox/p/5978150.html" target="_blank">其他网站解释</a></td></tr>
+				<tr><td>transform: perspective();</td><td>透视点（需要配合<code>transform-style</code>）</td></tr>
+				<tr><td>transform-style: preserve-3d</td><td>z轴启用</td></tr>
+				<tr><td>perspective-origin: 50% 50%;</td><td>改变 3D 元素的底部位置</td></tr>
+				<tr><td>transform: matrix(0, 0, 0, 0, 0, 0);</td><td>六个参数的矩阵 <a class="hidden" href="http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/" target="_blank">其他网站解释</a></td></tr>
+				<tr><td>transform: matrix3d();</td><td>九个参数的矩阵</td></tr>
+			</table>
+		</div>
+		<h3>Transition</h3>
+		<div class="panel panel-default">
+			<table class="table">
+				<tr><td>transition-property</td><td>应用过渡效果的 CSS 属性的名称 <button type="button" class="btn btn-xs pro-attr">3个值</button></td></tr>
+				<tr class="pro-hid"><td>transition-property: none;</td><td>没有任何css需要应用过渡效果</td></tr>
+				<tr class="pro-hid"><td>transition-property: all;</td><td>所有的css都应用过渡效果</td></tr>
+				<tr class="pro-hid"><td>transition-property: property;</td><td>指定的css应用过渡效果，多个css要用逗号或空格隔开</td></tr>
+				<tr><td>transition-duration: time;</td><td>过渡效果花费的时间（以秒或毫秒计）</td></tr>
+				<tr><td>transition-timing-function</td><td>规定过渡效果的速度曲线 <button type="button" class="btn btn-xs fn-attr">6个值</button></td></tr>
+				<tr class="fn-hid"><td>transition-timing-function: linear;</td><td>匀速</td></tr>
+				<tr class="fn-hid"><td>transition-timing-function: ease;</td><td>快慢，快结束时变慢</td></tr>
+				<tr class="fn-hid"><td>transition-timing-function: ease-in;</td><td>慢快</td></tr>
+				<tr class="fn-hid"><td>transition-timing-function: ease-out;</td><td>快慢，到中间变慢</td></tr>
+				<tr class="fn-hid"><td>transition-timing-function: ease-in-out;</td><td>慢快慢</td></tr>
+				<tr class="fn-hid"><td>: cubic-bezier(n,n,n,n);</td><td>cubic-bezier(0.42, 0, 0.58, 1) 和ease-in-out一样 cubic-bezier(0, 0, 1, 1) 和linear一样</td></tr>
+				<tr><td>transition-delay: time;</td><td>过渡效果何时开始（以秒或毫秒计）<code>transition-delay: 1s, 2s;</code>1s对应第一个需要延迟的css，2s对应第二个需要延迟的css</td></tr>
+				<tr><td>transition</td><td><code>transition: property duration timing-function delay;</code>简写属性，用于一次设置四个过渡属性。 <button type="button" class="btn btn-xs trans-attr">其他用法</button></td></tr>
+				<tr class="trans-hid"><td>transition: property duration;</td><td>最少要写这两个，最简单的写法<code>transition: all 2s;</code></td></tr>
+				<tr class="trans-hid"><td>分别使用</td><td><code>transition: width 2s ease 2s, height 1s ease-in 1s;</code></td></tr>
+			</table>
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script>
+	$(function () {
+		fn1('.pro-attr', '.pro-hid');
+		fn1('.fn-attr', '.fn-hid');
+		fn1('.trans-attr', '.trans-hid');
+		function fn1(ele1, ele2) {
+			$(ele1).click(function () {
+				if($(ele2).is(':hidden')) {
+					$(ele2).show();
+				} else {
+					$(ele2).hide();
+				}
+			})
+		}
+	})
+</script>
+</html>

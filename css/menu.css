@@ -4,6 +4,10 @@
 }
 body {
 	background: #fdfcf8;
+	max-width: 1360px;
+	min-width: 1200px;
+	min-height: 1050px;
+	margin: 0 auto;
 }
 li {
 	list-style-type: none;
@@ -11,12 +15,6 @@ li {
 a {
 	text-decoration: none;
 	color: inherit;
-}
-#wrapper {
-	max-width: 1360px;
-	min-width: 1200px;
-	margin: 0 auto;
-	overflow:hidden;
 }
 #header {
 	width: 100%;
@@ -43,7 +41,8 @@ a {
 }
 #main {
 	width: calc(100% - 220px);
+	margin-bottom: 20px;
+	height: 100%;
 	float: right;
 	box-sizing: border-box;
-	height: 100%;
 }

@@ -1,7 +1,7 @@
 $(function() {
 	var str1 = ' ';
 	fn1();
-	function fn1() {
+	function fn1() {		//日期
 		var oDate1 = new Date();
 		str1 = oDate1.getFullYear() + '' + toDon((oDate1.getMonth() + 1)) + toDon(oDate1.getDate());
 		for (var i = 0; i < str1.length; i++) {
@@ -12,31 +12,23 @@ $(function() {
 	}
 	var timer = null;
 	var str2 = ' ';
-	timer = setInterval(fn2, 100);
+	timer = setInterval(fn2, 1000);
 	fn2();
-	function fn2() {
+	function fn2() {		//时间
 		var oDate2 = new Date();
 		str2 = toDon(oDate2.getHours()) + toDon(oDate2.getMinutes()) + toDon(oDate2.getSeconds());
 		for (var i = 0; i < str2.length; i++) {
 			$('#header').find('.img2').eq(i).attr('src', 'images/' + str2[i] + '.png')
 		}
-		if (str2 == '000000') {
+		if (str2 == '000000') {		//当时间为00:00:00时执行fn1()，日期刷新
 			fn1();
-			alert(1)
 		}
 	}
-	function toDon(n) {
+	function toDon(n) {		//转换成string类型，并且当数值小于10时，前面添加个零
 		if (n > 9) {
 			return n + '';
 		} else {
 			return '0' + n;
 		}
 	}
-	$('#navfirst').find('#css').find('a').eq(2).addClass('hidden');
-	$('#html').append('<a href="canvas.html" class="list-group-item">canvas</a>');
-	if ($('title').html() == 'canvas') {
-		$('#html').children('a').eq(1).addClass('active');
-	}
-	$('#wrapper').css('min-height', '1050px');
-	$('#main').css('margin-bottom', '20px');
 })
