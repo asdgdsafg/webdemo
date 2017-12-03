@@ -167,6 +167,15 @@
 				<tr><th>n{x, y}</th><td>匹配最少 x 个、最多 y 个 n</td></tr>
 			</table>
 		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">5.5 分组字符</div>
+			<table class="table">
+				<tr><th>(abc)</th><td>匹配 abc</td></tr>
+				<tr><th>\1 | $1</th><td>必须配合<code>(abc)\1</code>匹配第 1 个括号里的内容；例<code>/^(.)\1+$/</code>匹配一串同个字的字符串，如aaaa、啊啊啊啊等等</td></tr>
+				<tr><th>\2 | $2</th><td>必须配合<code>(abc)(deg)\2</code>匹配第 2 个括号里的内容</td></tr>
+				<tr><th>\3 | $3</th><td>必须配合<code>(abc)(def)(ghi)\3</code>匹配第 3 个括号里的内容</td></tr>
+			</table>
+		</div>
 		<h4 class="hidden">6. 常用正则</h4>
 		<div class="panel panel-default hidden">
 			<table class="table">
