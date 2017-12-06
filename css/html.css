@@ -1,26 +1,37 @@
-#main .table th:first-child {
-	width: 22%;
-}
+#main .table th:first-child,
 #main .table td:first-child {
-	width: 22%;
+	width: 20%;
 }
-#main .panel:nth-of-type(2) table td:nth-child(2),
-#main .panel:nth-of-type(2) table td:nth-child(3) {
-	width: 39%;
+#main .panel2 table td:nth-child(2) {
+	width: 32%
 }
-#main .panel table .a-son-hid {
+#main .panel2 table td:nth-child(3) {
+	width: 48%;
+}
+#main .panel2 table .a-son-hid,
+#main .panel2 .input-attr-hid {
 	display: none;
-	color: blue;
+	color: #A582FF;
 }
 #main .panel table button {
 	color: #333;
 }
-#main .panel .a-hid,
-#main .panel .a-url-hid,
-#main .panel .abbr-hid,
-#main .panel .audio-hid,
-#main .panel .img-hid,
-#main .panel .img-url-hid {
+#main .panel2 .a-hid,
+#main .panel2 .a-url-hid,
+#main .panel2 .abbr-hid,
+#main .panel2 .audio-hid,
+#main .panel2 .img-hid,
+#main .panel2 .form-hid,
+#main .panel2 .input-hid,
+#main .panel2 .laber-hid,
+#main .panel2 .fiel-hid ,
+#main .panel2 .btn-hid,
+#main .panel2 .se-hid,
+#main .panel2 .opti-hid,
+#main .panel2 .optg-hid,
+#main .panel2 .textarea-hid,
+#main .panel2 .outp-hid,
+#main .panel2 .meta-hid {
 	display: none;
 	color: #3c763d;
 }
