@@ -2,8 +2,8 @@ $(function () {
 	$(window).scroll(fn1);
 	fn1();
 	function fn1() {
-		var x = $(window).scrollTop() - 100;
-		var timer = null;
+		let x = $(window).scrollTop() - 100;
+		let timer = null;
 		if ($(window).scrollTop() > 100) {
 			timer = setTimeout(function () {
 				$('.topimg').css({
@@ -12,10 +12,8 @@ $(function () {
 				})
 			}, 30)
 		} else {
-			clearInterval(timer);
-			$('.topimg').css({
-				'top' : '0'
-			})
+			clearTimeout(timer);
+			$('.topimg').css('top', '0');
 		}
 	}
 	$('.div1').find('button').first().click(function() {

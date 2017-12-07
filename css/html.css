@@ -1,3 +1,13 @@
+#main {
+	position: relative;
+}
+#main .search {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 34px;
+	width: 240px;
+}
 #main .table th:first-child,
 #main .table td:first-child {
 	width: 20%;
@@ -31,7 +41,8 @@
 #main .panel2 .optg-hid,
 #main .panel2 .textarea-hid,
 #main .panel2 .outp-hid,
-#main .panel2 .meta-hid {
+#main .panel2 .meta-hid,
+#main .panel2 .bdo-hid {
 	display: none;
 	color: #3c763d;
 }

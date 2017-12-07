@@ -17,6 +17,7 @@ $(function () {
 	fn('.textarea-attr', '.textarea-hid');
 	fn('.outp-attr', '.outp-hid');
 	fn('.meta-attr', '.meta-hid');
+	fn('.bdo-attr', '.bdo-hid');
 	function fn(ele1, ele2, ele3) {
 		$('#main').children('.panel2').find(ele1).click(function () {
 			if($('#main').children('.panel2').find(ele2).is(':hidden')){
@@ -27,7 +28,19 @@ $(function () {
 			}
 		})
 	}
-	$('.a-rel').click(function () {
-		window.open("http://www.w3school.com.cn/tags/att_a_rel.asp");
-	})
+	$(window).scroll(scrollT);
+	scrollT();
+	function scrollT() {
+		let top = $(window).scrollTop();
+		let timer = null;
+		if (top >= 100) {
+			top = top - 100;
+		} else {
+			top = 0;
+			clearTimeout(timer)
+		}
+		timer = setTimeout(function () {
+			$('#main .search').css('top', top + 'px');
+		}, 30)
+	}
 })
